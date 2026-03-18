@@ -3,97 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connor Allen Augustine | Software & Cybersecurity</title>
+    <title>Connor Augustine | Software Engineer & Cybersecurity</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav class="top-nav">
         <div class="nav-container">
-            <h1 class="logo">CAA.</h1>
-            <ul class="nav-links">
+            <div class="logo">CAA</div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-nav">Contact Me</a></li>
             </ul>
         </div>
     </nav>
 
-    <header id="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Connor Allen Augustine.</h1>
-            <p>Computer Science Graduate | Specializing in Cybersecurity & Business</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </header>
-
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>I am a highly motivated computer science professional with a passion for securing systems and building efficient software. My background blends deep technical coursework in cybersecurity with a minor in business administration, allowing me to bridge the gap between technical execution and high-level organizational goals. I love solving complex problems, whether that's optimizing code, securing networks, or tinkering with 3D printing and PC hardware.</p>
-    </section>
-
-    <section id="skills" class="container bg-light">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Languages</h3>
-                <p>Python, Java, C++, JavaScript, SQL</p>
+    <main class="container">
+        <header id="hero" class="fade-in">
+            <p class="greeting">Hi, I'm Connor Augustine.</p>
+            <h1>I'm a computer science senior at LSU focused on cybersecurity and software development.</h1>
+            <p class="hero-desc">Graduating Spring 2026. I build secure applications, troubleshoot complex networks, and love figuring out how things work from the inside out.</p>
+            <div class="hero-links">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="https://github.com/yourusername" target="_blank" class="btn btn-outline">GitHub</a>
             </div>
-            <div class="skill-card">
-                <h3>Cybersecurity & IT</h3>
-                <p>Network Security, Risk Assessment, Troubleshooting, (Pursuing Security+ / CCNA)</p>
-            </div>
-            <div class="skill-card">
-                <h3>Tools & Technologies</h3>
-                <p>Git, AWS, Linux, HTML/CSS, 3D Modeling</p>
-            </div>
-        </div>
-    </section>
+        </header>
 
-    <section id="projects" class="container">
-        <h2>Featured Projects</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <h3>University Roommate Matching App</h3>
-                <p><strong>Tech Stack:</strong> [Insert Tech Stack Here, e.g., React Native, Node.js, Firebase]</p>
-                <p>Developed a mobile application designed to improve on-campus housing experiences by matching university students with compatible roommates using a custom algorithmic approach.</p>
-                <a href="#" class="btn-small">View Source</a>
+        <section id="about" class="fade-in" style="margin-bottom: 4rem;">
+            <div class="card about-card">
+                <h3 class="section-title">About Me</h3>
+                <p>I’ve always been a tinkerer. I'm currently wrapping up my B.S. in Computer Science at Louisiana State University, specializing in cybersecurity with a minor in business. For me, the best part of tech is understanding not just how to write the code, but how to secure the system and see how it fits into the bigger picture of a business.</p>
+                <p>Alongside my studies, I work as a Technical Support Agent for LSU, which has given me great practical experience in troubleshooting hardware and network infrastructure. Outside of work and classes, my tech interests are pretty hands-on: I spend my free time building and modifying PCs, running 3D printing projects, and following market trends.</p>
             </div>
-            <div class="project-item">
-                <h3>[Your Second Project Here]</h3>
-                <p><strong>Tech Stack:</strong> [Insert Tech Stack Here]</p>
-                <p>A brief 1-2 sentence description of the problem you solved and what the outcome was.</p>
-                <a href="#" class="btn-small">View Source</a>
+        </section>
+
+        <section id="skills" class="fade-in" style="margin-bottom: 4rem;">
+            <h3 class="section-title">Core Competencies</h3>
+            
+            <div class="tabs-container">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="languages">Languages</button>
+                    <button class="tab-btn" data-tab="frameworks-dbs">Frameworks & Databases</button>
+                    <button class="tab-btn" data-tab="cloud-config">Cloud & Config</button>
+                    <button class="tab-btn" data-tab="tools">IDE & Tools</button>
+                    <button class="tab-btn" data-tab="other">Management & Other</button>
+                </div>
+
+                <div class="tabs-body">
+                    
+                    <div id="languages" class="tab-panel active">
+                        <div class="interactive-tags">
+                            <span>Java</span><span>JavaScript</span><span>SQL</span><span>Python</span><span>CSS</span><span>HTML</span><span>C</span><span>C++</span><span>Dart</span><span>Rust</span>
+                        </div>
+                    </div>
+
+                    <div id="frameworks-dbs" class="tab-panel">
+                        <div class="interactive-tags">
+                            <span>Godot</span><span>Flutter</span><span>Unity</span><span>Blender</span><span>MySQL</span><span>SQLite</span><span>Firebase</span>
+                        </div>
+                    </div>
+
+                    <div id="cloud-config" class="tab-panel">
+                        <div class="interactive-tags">
+                            <span>Git</span><span>GitHub</span><span>JIRA</span>
+                        </div>
+                    </div>
+
+                    <div id="tools" class="tab-panel">
+                        <div class="interactive-tags">
+                            <span>NetBeans</span><span>Eclipse</span><span>PyCharm</span><span>Android Studio</span><span>XCode</span><span>VS Code</span><span>Figma</span><span>Miro</span>
+                        </div>
+                    </div>
+
+                    <div id="other" class="tab-panel">
+                        <div class="interactive-tags">
+                            <span>Slack</span><span>Discord</span><span>Notion</span><span>Scrum</span><span>Usability Testing</span><span>Privacy Policy</span><span>Requirement Analysis</span><span>Project Management</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="experience" class="container bg-light">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Technical Support Agent</h3>
-            <h4>Information Technology Services | [Insert Dates]</h4>
-            <ul>
-                <li>Provided front-line technical support and troubleshooting for university students, faculty, and staff.</li>
-                <li>Resolved complex hardware, software, and network connectivity issues efficiently.</li>
-                <li>Maintained detailed documentation of support tickets and system resolutions.</li>
-            </ul>
-        </div>
-    </section>
+        <section id="experience" class="fade-in" style="margin-bottom: 4rem;">
+            <h3 class="section-title">Experience & Education</h3>
+            <div class="timeline">
+                
+                <div class="timeline-item card">
+                    <div class="timeline-header">
+                        <div>
+                            <h4>Technical Support Agent</h4>
+                            <p class="subtitle">Information Technology Services, LSU</p>
+                        </div>
+                        <span class="date-badge">Current</span>
+                    </div>
+                    <ul class="timeline-details">
+                        <li>Provide front-line technical support and troubleshooting for complex hardware, software, and network issues.</li>
+                        <li>Ensure secure and efficient network connectivity for enterprise-level university systems.</li>
+                    </ul>
+                </div>
 
-    <section id="contact" class="container text-center">
-        <h2>Let's Connect</h2>
-        <p>I am currently seeking full-time opportunities in software engineering, IT, and cybersecurity.</p>
-        <a href="mailto:your.email@example.com" class="btn">Email Me</a>
-        <div class="social-links">
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a> | 
-            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-        </div>
-    </section>
+                <div class="timeline-item card">
+                    <div class="timeline-header">
+                        <div>
+                            <h4>B.S. Computer Science</h4>
+                            <p class="subtitle">Louisiana State University</p>
+                        </div>
+                        <span class="date-badge">Spring 2026</span>
+                    </div>
+                    <ul class="timeline-details">
+                        <li><strong>Concentration:</strong> Cybersecurity</li>
+                        <li><strong>Minor:</strong> Business Administration</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="fade-in" style="margin-bottom: 4rem;">
+            <h3 class="section-title">Featured Work</h3>
+            <div class="project-grid">
+                
+                <div class="card project-card">
+                    <div class="project-header">
+                        <h4>University Roommate Matching App</h4>
+                        <a href="#" class="project-link">Source Code &rarr;</a>
+                    </div>
+                    <p>A full-stack mobile application engineered to optimize on-campus housing. The platform utilizes custom behavioral algorithms to pair university students with highly compatible roommates, streamlining the housing process.</p>
+                    <div class="interactive-tags small-tags" style="margin-top: 1rem;">
+                        <span>Flutter</span><span>Miro</span><span>Firebase</span>
+                    </div>
+                </div>
+
+                 <div class="card project-card">
+                    <div class="project-header">
+                        <h4>[Your Second Project]</h4>
+                        <a href="#" class="project-link">Source Code &rarr;</a>
+                    </div>
+                    <p>A brief description of another project, the problem it solved, and the technologies you used to build it. Consider highlighting a project using Unity, Blender, or Android Studio here.</p>
+                    <div class="interactive-tags small-tags" style="margin-top: 1rem;">
+                        <span>Tech 1</span><span>Tech 2</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section id="contact" class="fade-in text-center" style="margin-bottom: 4rem;">
+            <h3 class="section-title">Let's Connect</h3>
+            <p>I am currently seeking full-time software engineering and cybersecurity opportunities for post-graduation.</p>
+            <a href="mailto:connoraaugustine@gmail.com" class="btn btn-primary" style="margin-top: 1rem;">Email Me</a>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Connor Allen Augustine. Built from scratch.</p>
+        <p>&copy; 2026 Connor Augustine. Designed and Built from scratch.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
