@@ -97,11 +97,28 @@ p {
     align-items: center;
 }
 
+/* --- Terminal Prompt Logo --- */
 .logo {
+    font-family: 'Fira Code', monospace;
     font-weight: 700;
-    font-size: 1.2rem;
-    color: var(--accent-color);
-    letter-spacing: -0.5px;
+    font-size: 1.4rem;
+    color: var(--accent-color); /* The vibrant purple */
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Slight pop when hovered */
+}
+
+.logo .bracket {
+    color: var(--text-muted); /* Soft gray for the brackets */
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 0 4px;
+    opacity: 0.7;
 }
 
 .nav-links {
